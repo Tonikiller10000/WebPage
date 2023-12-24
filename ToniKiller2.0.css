@@ -1,0 +1,118 @@
+*{margin-bottom: 0%;}
+html{
+    scroll-behavior: smooth;}
+
+
+#NavBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.5s;
+    width: 100%;
+    height: 80px;}
+.NavBar_Active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.5s;
+    height: -80px; 
+background: #da1d1d;}
+#NavBar ul{
+    list-style: none;
+    display: flex;
+    float: right;
+    background: #75db97;
+    width: 100%;}  
+#NavBar ul li{
+    text-align: center;
+    width: 12.5% ;}   
+#NavBar ul li a{
+    text-decoration: none;}
+#NavBar ul li a i{
+    font-size: 4em;
+    transition: .5s;}
+#NavBar ul li a div{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);}
+#NavBar ul li:hover a i{
+    transform: translateY(-20px) scale(.5);}
+#NavBar ul li:hover a div{
+    transform: translateY(-20px);
+    opacity: 1;}
+
+
+/*
+Positions:
+    Static - normal
+    Relative - position is moved from the real position(space remain) 
+    Fixed - e fixa pe ecran si ramane pe ecran si la scroll
+    Absolute - from the parent (real position is the actual position (space removed))
+
+
+
+
+
+
+ */
+#BottomBar{
+    background: #2e2e2e;
+    position: absolute;
+    left: 0;
+    width: 100%;}
+
+#BottomBar_Containers{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    /*justify-content: flex-end;*/
+    }
+
+/*Flex: wrap, basis, grow, ...*/
+
+
+#BottomBar_Containers li{
+    background: #383737;
+    width: 20%;
+    margin-left: 0px;
+    margin-right: 5px;}
+
+#BottomBar_Containers li div{
+    background: #bebebe;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;}
+
+#SectionTitle{
+    text-align: center;
+    color: #ffffff;
+    background: #e4e118;}
+
+#FollowSection_Icons{
+    list-style: none; 
+    background: #bb0d0d00;}
+#FollowSection_Icons li a{
+    text-decoration: none;
+    background: #75db9700;}
+
+#BottomBar_CopyrightText{
+    text-align: center;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+    box-sizing: border-box;}
+
+
+
+
+
+
+
+/*Responsive*/
+@media(max-width:800px){
+    body{background: #da1d1d;}
+
+}
+
